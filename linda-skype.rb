@@ -1,4 +1,5 @@
 #!/usr/bin/env ruby
+# -*- coding: utf-8 -*-
 require 'rubygems'
 require File.expand_path 'libs/skype', File.dirname(__FILE__)
 require 'sinatra/rocketio/linda/client'
@@ -25,7 +26,8 @@ linda.io.on :connect do
     p tuple
     if tuple.size == 3
       puts str = tuple[2]
-      if Skype.send_chat_message(chat, str) =~ /STATUS SENDING$/
+      msg = "(ninja) 《Linda》 #{str} 《masuilab》"
+      if Skype.send_chat_message(chat, msg) =~ /STATUS SENDING$/
         ts.write ["skype", "send", str, "success"]
       else
         ts.write ["skype", "send", str, "fail"]
