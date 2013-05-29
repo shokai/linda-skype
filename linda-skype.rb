@@ -6,7 +6,7 @@ $stdout.sync = true
 
 url   = ENV["LINDA_BASE"]  || "http://localhost:5000"
 space = ENV["LINDA_SPACE"] || "test"
-chat  = ENV["CHAT"]        || ARGV.shift
+chat  = ENV["CHAT_ID"]     || ARGV.shift
 if chat.empty?
   STDERR.puts "please set Chat ID"
   STDERR.puts "e.g.  bundle exec ruby #{$0} '#shokai/$a1b2cdef3456'"
