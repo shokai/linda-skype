@@ -27,7 +27,7 @@ linda.io.on :connect do
     p tuple
     if tuple.size == 3
       puts str = tuple[2]
-      msg = "(ninja) 《Linda》 #{str} 《masuilab》"
+      msg = "(ninja) 《Linda》 #{str} 《#{space}》"
       chat.post msg
       ts.write ["skype", "send", str, "success"]
     end
