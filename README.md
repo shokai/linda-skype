@@ -4,12 +4,13 @@ send skype message with RocketIO::Linda
 
 * https://github.com/shokai/linda-skype
 * watch Tuples ["skype", "send", String] and send message.
-* write a Tuple ["skype", "send", String, "success"] or ["skype", "send", String, "fail"].
+* write a Tuple ["skype", "send", String, "success"].
 
 Dependencies
 ------------
-- Skype.app on MacOSX
-- Ruby 1.8.7 (not support 1.9)
+- Skype
+- Mac or Linux
+- Ruby 1.8.7~2.0.0
 - [LindaBase](https://github.com/shokai/linda-base)
 
 
@@ -22,11 +23,6 @@ Install Dependencies
 
 Run
 ---
-
-check Chat IDs
-
-    % bundle exec ruby show_chat_list.rb
-
 
 set ENV var "LINDA_BASE", "LINDA_SPACE" and "CHAT_TOPIC"
 
