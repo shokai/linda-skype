@@ -28,16 +28,16 @@ check Chat IDs
     % bundle exec ruby show_chat_list.rb
 
 
-set ENV var "LINDA_BASE", "LINDA_SPACE" and "CHAT"
+set ENV var "LINDA_BASE", "LINDA_SPACE" and "CHAT_TOPIC"
 
     % export LINDA_BASE=http://linda.example.com
     % export LINDA_SPACE=test
-    % export CHAT_ID='#shokai/$a1b2cdef3456'
+    % export CHAT_TOPIC='linda chat'
     % bundle exec ruby linda-mac-say.rb
 
 or
 
-    % LINDA_BASE=http://linda.example.com LINDA_SPACE=test CHAT_ID='#shokai/$a1b2cdef3456' bundle exec ruby linda-skype.rb
+    % LINDA_BASE=http://linda.example.com LINDA_SPACE=test CHAT_TOPIC='linda chat' bundle exec ruby linda-skype.rb
 
 
 Install as Service
