@@ -43,3 +43,8 @@ for launchd (Mac OSX)
 
     % sudo foreman export launchd /Library/LaunchDaemons/ --app linda-skype -u `whoami`
     % sudo launchctl load -w /Library/LaunchDaemons/linda-skype-skype-1.plist
+
+for upstart (Ubuntu)
+
+    % sudo foreman export upstart /etc/init/ --app linda-skype -d `pwd` -u `whoami`
+    % sudo service linda-skype start
